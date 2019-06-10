@@ -11,7 +11,7 @@
     <android.support.constraint.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/logo_guideline"
+            android:id="@+id/logoGuideline"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="222dp"/>
 
@@ -21,7 +21,7 @@
             app:srcCompat="@color/colorPrimary"
             android:id="@+id/imageView2"
             android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/logo_guideline"
+            app:layout_constraintBottom_toTopOf="@+id/logoGuideline"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="28dp"
-            app:layout_constraintTop_toTopOf="@+id/logo_guideline"
+            app:layout_constraintTop_toTopOf="@+id/logoGuideline"
             android:background="@drawable/username_input"
             android:hint="Username"
             android:textSize="24sp"
@@ -64,13 +64,13 @@
             android:layout_marginEnd="8dp"
             android:paddingLeft="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/inputsGuideline"
             app:layout_constraintVertical_bias="0.145"/>
 
     <android.support.constraint.Guideline
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/guideline"
+            android:id="@+id/inputsGuideline"
             app:layout_constraintGuide_begin="379dp"
             android:orientation="horizontal"/>
     <ImageView
@@ -80,22 +80,20 @@
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.161"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline"
-            app:layout_constraintVertical_bias="0.117"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/inputsGuideline"
+            app:layout_constraintVertical_bias="0.114" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonsGuideline" app:layout_constraintHorizontal_bias="0.836"/>
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" app:srcCompat="@drawable/log_in_button"
             android:id="@+id/imageView4"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="48dp"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintVertical_bias="0.114"
-            app:layout_constraintStart_toEndOf="@+id/signUpButton" android:layout_marginStart="16dp"
-            app:layout_constraintHorizontal_bias="1.0"/>
+            app:layout_constraintTop_toTopOf="@+id/inputsGuideline" app:layout_constraintVertical_bias="0.114"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/buttonsGuideline" app:layout_constraintHorizontal_bias="0.145"/>
     <TextView
             android:text="My Money Tracker - All rigths reserved 2019"
             android:layout_width="wrap_content"
@@ -104,4 +102,10 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintHorizontal_bias="0.44" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" android:textSize="18sp"/>
+    <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonsGuideline"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
 </android.support.constraint.ConstraintLayout>
